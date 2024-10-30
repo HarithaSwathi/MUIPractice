@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav {
+            position: relative;
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 60px; /* To ensure it's below the fixed header */
+        }
+
+        main {
+            position: relative;
+            padding: 20px;
+            margin-top: 20px; /* Add space below the navigation bar */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .content {
+            min-height: 200px;
+            padding-bottom: 60px; /* Add padding to ensure content doesn't overlap with the footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <h2>Navigation Bar</h2>
+    </nav>
+    <main>
+        <div class="content">
+            <h2>Main Content Area</h2>
+            <p>This is the main content area.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
